@@ -64,7 +64,7 @@ export function Home() {
   function handleAddSkill() {
     Keyboard.dismiss();
     const proficiencyValue = parseInt(proficiency, 10);
-    if (!name || !proficiency) {
+    if (!name || !proficiency || !name.trim()) {
       Alert.alert(
         'Erro',
         'O nome da skill e a proficiência devem ser preenchidos!.',
